@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Shop</title>
+    <!--fontawsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+                <img src="img/shopping-bag-icon.png" alt="Ícone sacola">
+                <span class="text-uppercase fw-lighter ms-2">Fancy</span>
+            </a>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">3</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link textuppercase text-dark">Início</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#colecao" class="nav-link textuppercase text-dark">Coleção</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#destaque" class="nav-link textuppercase text-dark">Destaques</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#blog" class="nav-link textuppercase text-dark">Blog</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#sobre" class="nav-link textuppercase text-dark">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#popular" class="nav-link textuppercase text-dark">Populares</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--header-->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Coleção</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Lançamentos</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Comprar</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Promoções</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">Melhores ofertas</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Comprar</a>
+            </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!--colecao-->
+    <section id="colecao" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Nova Coleção</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">Tudo</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".mais">Mais Vendidos</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".des">Descontos</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".lan">Lançamentos</button>
+                </div>
+
+                <div class="colecao-list mt-4 row g-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 mais">
+                        <div class="colecao-img position-relative">
+                            <img src="img/c_camisa_cinza.png" class="w-100" alt="camisa cinza">
+                            <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+                        </div>
+
+                <div class="text-center">
+                    <div class="rating mt-3">
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                        <span class="text-primary"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-capitalize my-1">Camisa Poí</p>
+                   <span class="fw-bold">R$69,90</span>
+                </div>
+            </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2 des">
+                    <div class="colecao-img position-relative">
+                        <img src="img/c_blusa_babado.png" class="w-100" alt="Blusa Babado">
+                        <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+                    </div>
+
+            <div class="text-center">
+                <div class="rating mt-3">
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                    <span class="text-primary"><i class="fas fa-star"></i></span>
+                </div>
+                <p class="text-capitalize my-1">Babado Poí</p>
+                <span class="fw-bold">R$50,90</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 lan">
+            <div class="colecao-img position-relative">
+                <img src="img/c_calça_fem.png" class="w-100" alt="calça fem">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span     class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span> 
+                </div>
+                <p class="text-capitalize my-1">Calça Boyfriend</p>
+                <span class="fw-bold">R$105,00</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 mais">
+            <div class="colecao-img position-relative">
+                <img src="img/c_camisa_fem.png" class="w-100" alt="camisa">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span> 
+                </div>
+                <p class="text-capitalize my-1">Camísa Hipster</p>
+                <span class="fw-bold">R$46,90</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 des">
+            <div class="colecao-img position-relative">
+                <img src="img/c_polo_fem.png" class="w-100" alt="cropped camisa">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span> 
+                </div>
+                <p class="text-capitalize my-1">Camisa Estilo Cropped</p>
+                <span class="fw-bold">R$69,90</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 lan">
+            <div class="colecao-img position-relative">
+                <img src="img/c_camisa_mas.png" class="w-100" alt="camisa masc">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span> 
+                </div>
+                <p class="text-capitalize my-1">Camísa Estilo Kimono</p>
+                <span class="fw-bold">R$103,00</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 mais">
+            <div class="colecao-img position-relative">
+                <img src="img/c_blusa_morcego.png" class="w-100" alt="camisa morcego">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span> 
+                </div>
+                <p class="text-capitalize my-1">Camísa Morcego</p>
+                <span class="fw-bold">R$73,90</span>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 des">
+            <div class="colecao-img position-relative">
+                <img src="img/c_blusa_fem.png" class="w-100" alt="blusa fem">
+                <span class="position-absolute bg-primary text-white d-flex align-items-center">Oferta</span>
+            </div>
+            <div class="text-center">
+                <div class="rating mt-3">
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span>
+                   <span class="text-primary"><i class="fas fa-star "></i></span> 
+                </div>
+                <p class="text-capitalize my-1">Blusa Beverly Hills</p>
+                <span class="fw-bold">R$69,90</span>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--Especial-->
+    <section id="especial" class="py-2">
+        <div class="container">
+            <div class="title text-center py-2">
+                <h2 class="position-relative d-inline-block">Peças Especiais</h2>
+            </div>
+
+            <div class="especial-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="especial-img position-relative overflow-hidden">
+                        <img src="img/especial2.jpg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Camisa listrada Esporte</p>
+                        <span class="fw-bold d-block">R$69,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="especial-img position-relative overflow-hidden">
+                        <img src="img/especial1.jpeg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Gabardine Estilo Capa</p>
+                        <span class="fw-bold d-block">R$276,90</span>
+                        <a href="#" class="btn btn-primary mt-3">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="especial-img position-relative overflow-hidden">
+                        <img src="img/especial4.jpeg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Jeans 80's</p>
+                        <span class="fw-bold d-block">R$110,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="especial-img position-relative overflow-hidden">
+                        <img src="img/especial6.jpeg" class="w-100">
+                        <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Vestido Musgo</p>
+                        <span class="fw-bold d-block">R$80,00</span>
+                        <a href="#" class="btn btn-primary mt-3">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Banner-->
+
+<section class="py-2">
+    <div class="container">
+        <div class="title text-center py-2">
+            <h2 class="position-relative d-inline-block">Novidades</h2>
+        </div>       
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!--jquery-->
+     <script src="js/jquery-3.6.0.js"></script>
+     <!--isotope-->
+     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+     <!--Bootstrap js-->
+     <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+     <!--js-->
+     <script src="js/script.js"></script>
+</body>
+</html>
